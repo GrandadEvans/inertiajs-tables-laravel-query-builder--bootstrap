@@ -1,6 +1,6 @@
 {
   "name": "@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Inertia.js Front-end Components for Spatie's Laravel Query Builder",
   "private": false,
   "author": "John Evans <john@grandadevans.com>",
