@@ -13,8 +13,8 @@ class InputSearchTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             User::first()->forceFill([
-                'name'  => 'Pascal Baljet',
-                'email' => 'pascal@protone.media',
+                'name'  => 'John Evans',
+                'email' => 'john@grandadevans.com',
             ])->save();
 
             $users = User::query()
@@ -26,17 +26,17 @@ class InputSearchTest extends DuskTestCase
                 ->waitFor('table')
                 // First user
                 ->assertSeeIn('tr:first-child td:nth-child(1)', $users->get(0)->name)
-                ->assertDontSee('Pascal Baljet')
+                ->assertDontSee('John Evans')
                 ->press('@add-search-row-dropdown')
                 ->press('@add-search-row-name')
-                ->type('name', 'Pascal Baljet')
-                ->waitForText('pascal@protone.media')
+                ->type('name', 'John Evans')
+                ->waitForText('john@grandadevans.com')
                 ->press('@remove-search-row-name')
-                ->waitUntilMissingText('pascal@protone.media')
+                ->waitUntilMissingText('john@grandadevans.com')
                 ->press('@add-search-row-dropdown')
                 ->press('@add-search-row-email')
-                ->type('email', 'pascal@protone.media')
-                ->waitForText('Pascal Baljet');
+                ->type('email', 'john@grandadevans.com')
+                ->waitForText('John Evans');
         });
     }
 }

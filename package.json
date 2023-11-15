@@ -1,20 +1,20 @@
 {
-  "name": "@protonemedia/inertiajs-tables-laravel-query-builder",
+  "name": "@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap",
   "version": "2.2.0",
   "description": "Inertia.js Front-end Components for Spatie's Laravel Query Builder",
   "private": false,
-  "author": "Pascal Baljet <pascal@protone.media>",
+  "author": "John Evans <john@grandadevans.com>",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/inertiajs-tables-laravel-query-builder.umd.js",
-  "module": "./dist/inertiajs-tables-laravel-query-builder.es.js",
+  "main": "./dist/inertiajs-tables-laravel-query-builder--bootstrap.umd.js",
+  "module": "./dist/inertiajs-tables-laravel-query-builder--bootstrap.es.js",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/inertiajs-tables-laravel-query-builder.es.js",
-      "require": "./dist/inertiajs-tables-laravel-query-builder.umd.js"
+      "import": "./dist/inertiajs-tables-laravel-query-builder--bootstrap.es.js",
+      "require": "./dist/inertiajs-tables-laravel-query-builder--bootstrap.umd.js"
     }
   },
   "scripts": {
