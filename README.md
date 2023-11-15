@@ -1,27 +1,32 @@
 # Inertia.js Tables for Laravel Query Builder
 
-[![Latest Version on NPM](https://img.shields.io/npm/v/@protonemedia/inertiajs-tables-laravel-query-builder.svg?style=flat-square)](https://npmjs.com/package/@protonemedia/inertiajs-tables-laravel-query-builder)
-[![npm](https://img.shields.io/npm/dt/@protonemedia/inertiajs-tables-laravel-query-builder.svg?style=flat-square)](https://www.npmjs.com/package/@protonemedia/inertiajs-tables-laravel-query-builder)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/protonemedia/inertiajs-tables-laravel-query-builder.svg?style=flat-square)](https://packagist.org/packages/protonemedia/inertiajs-tables-laravel-query-builder)
+[//]: # ([![Latest Version on NPM]&#40;https://img.shields.io/npm/v/@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap.svg?style=flat-square&#41;]&#40;https://npmjs.com/package/@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap&#41;)
+[//]: # ([![npm]&#40;https://img.shields.io/npm/dt/@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap.svg?style=flat-square&#41;]&#40;https://www.npmjs.com/package/@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap&#41;)
+[//]: # ([![Latest Version on Packagist]&#40;https://img.shields.io/packagist/v/grandadevans/inertiajs-tables-laravel-query-builder--bootstrap.svg?style=flat-square&#41;]&#40;https://packagist.org/packages/grandadevans/inertiajs-tables-laravel-query-builder--bootstrap&#41;)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![run-tests](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/actions/workflows/php.yml/badge.svg?branch=main)](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/actions/workflows/php.yml)
 
-## [⚠️ Don't start using this package for new projects ⚠️](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/issues/122)
+[//]: # ([![run-tests]&#40;https://github.com/grandadevans/inertiajs-tables-laravel-query-builder--bootstrap/actions/workflows/php.yml/badge.svg?branch=main&#41;]&#40;https://github.com/grandadevans/inertiajs-tables-laravel-query-builder--bootstrap/actions/workflows/php.yml&#41;)
 
-This package provides a *DataTables-like* experience for [Inertia.js](https://inertiajs.com/) with support for searching, filtering, sorting, toggling columns, and pagination. It generates URLs that can be consumed by Spatie's excellent [Laravel Query Builder](https://github.com/spatie/laravel-query-builder) package, with no additional logic needed. The components are styled with [Tailwind CSS 3.0](https://tailwindcss.com/), but it's fully customizable with slots. The data refresh logic is based on Inertia's [Ping CRM demo](https://github.com/inertiajs/pingcrm).
+## [⚠️ The reason for this fork ⚠️](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/issues/122)
 
-![Inertia.js Table for Laravel Query Builder](https://user-images.githubusercontent.com/8403149/177773377-86c32d69-8f86-47e4-8063-ea227e480d10.mp4)
+Fist of all, thanks for looking and second... if I were you I wouldn't use this package. I'm not sure what I'm doing with it yet. I will probably work on it, but it may be very opinionated. For example.
+* I use Bun instead of NPM/Yarn (you can just delete the bun file, and run  npm i)
+* I may dismantle the package
 
-## Support this package!
+This package provides a *DataTables-like* experience for [Inertia.js](https://inertiajs.com/) with support for searching, filtering, sorting, toggling columns, and pagination. It generates URLs that can be consumed by Spatie's excellent [Laravel Query Builder](https://github.com/spatie/laravel-query-builder) package, with no additional logic needed. The components will eventually be made with [Bootstrap v5](https://getbootstrap.com/), but it's fully customizable with slots. The data refresh logic is based on Inertia's [Ping CRM demo](https://github.com/inertiajs/pingcrm).
 
-❤️ We proudly support the community by developing Laravel packages and giving them away for free. If this package saves you time or if you're relying on it professionally, please consider [sponsoring the maintenance and development](https://github.com/sponsors/pascalbaljet). Keeping track of issues and pull requests takes time, but we're happy to help!
+[//]: # (![Inertia.js Table for Laravel Query Builder]&#40;https://user-images.githubusercontent.com/8403149/177773377-86c32d69-8f86-47e4-8063-ea227e480d10.mp4&#41;)
 
-## Laravel Splade
+[//]: # (## Support this package!)
 
-**Did you hear about Laravel Splade? 🤩**
-
-It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://github.com/protonemedia/laravel-splade) provides a super easy way to build Single Page Applications using Blade templates. Besides that magic SPA-feeling, it comes with more than ten components to sparkle your app and make it interactive, all without ever leaving Blade.
-
+[//]: # (❤️ We proudly support the community by developing Laravel packages and giving them away for free. If this package saves you time or if you're relying on it professionally, please consider [sponsoring the maintenance and development]&#40;https://github.com/sponsors/pascalbaljet&#41;. Keeping track of issues and pull requests takes time, but we're happy to help!)
+[//]: # ()
+[//]: # (## Laravel Splade)
+[//]: # ()
+[//]: # (**Did you hear about Laravel Splade? 🤩**)
+[//]: # ()
+[//]: # (It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade]&#40;https://github.com/protonemedia/laravel-splade&#41; provides a super easy way to build Single Page Applications using Blade templates. Besides that magic SPA-feeling, it comes with more than ten components to sparkle your app and make it interactive, all without ever leaving Blade.)
+[//]: # ()
 ## Features
 
 * Auto-fill: auto generates `thead` and `tbody` with support for custom cells
@@ -38,10 +43,10 @@ It's the *magic* of Inertia.js with the *simplicity* of Blade. [Splade](https://
 * [Vue 3](https://v3.vuejs.org/guide/installation.html)
 * [Laravel 9](https://laravel.com/)
 * [Inertia.js](https://inertiajs.com/)
-* [Tailwind CSS v3](https://tailwindcss.com/) + [Forms plugin](https://github.com/tailwindlabs/tailwindcss-forms)
-* PHP 8.0+
+* [Bootstrap v5](https://getbootstrap.com/)
+* [PHP 8.0+](https://www.php.net/)
 
-**Note**: There is currently an [issue](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/issues/69) with using this package with Vite!
+**Note**: There is currently an [issue](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/issues/69) on [Proton Media](https://github.com/protonemedia)s [original repo](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder) with using this package with Vite!
 
 ## Installation
 
@@ -52,7 +57,7 @@ You need to install both the server-side package and the client-side package. No
 You can install the package via composer:
 
 ```bash
-composer require protonemedia/inertiajs-tables-laravel-query-builder
+composer require grandadevans/inertiajs-tables-laravel-query-builder--bootstrap
 ```
 
 The package will automatically register the Service Provider which provides a `table` method you can use on an Interia Response.
@@ -65,7 +70,7 @@ With the `searchInput` method, you can specify which attributes are searchable. 
 Though it's enough to pass in the column key, you may specify a custom label and default value.
 
 ```php
-use ProtoneMedia\LaravelQueryBuilderInertiaJs\InertiaTable;
+use GrandadEvans\LaravelQueryBuilderInertiaJs\InertiaTable;
 
 Inertia::render('Page/Index')->table(function (InertiaTable $table) {
     $table->searchInput('name');
@@ -159,7 +164,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Collection;
 use Inertia\Inertia;
-use ProtoneMedia\LaravelQueryBuilderInertiaJs\InertiaTable;
+use GrandadEvans\LaravelQueryBuilderInertiaJs\InertiaTable;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 
@@ -207,9 +212,9 @@ class UserIndexController
 You can install the package via either `npm` or `yarn`:
 
 ```bash
-npm install @protonemedia/inertiajs-tables-laravel-query-builder --save
+npm install @grandadevans/inertiajs-tables-laravel-query-builder--bootstrap --save
 
-yarn add @protonemedia/inertiajs-tables-laravel-query-builder
+yarn add @grandadevans/inertiajs-tables-laravel-query-builder--bootstrap
 ```
 
 Add the repository path to the `content` array of your [Tailwind configuration file](https://tailwindcss.com/docs/content-configuration). This ensures that the styling also works on production builds.
@@ -217,7 +222,7 @@ Add the repository path to the `content` array of your [Tailwind configuration f
 ```js
 module.exports = {
   content: [
-    './node_modules/@protonemedia/inertiajs-tables-laravel-query-builder/**/*.{js,vue}',
+    './node_modules/@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap/**/*.{js,vue}',
   ]
 }
 ```
@@ -228,7 +233,7 @@ To use the `Table` component and all its related features, you must import the `
 
 ```vue
 <script setup>
-import { Table } from "@protonemedia/inertiajs-tables-laravel-query-builder";
+import { Table } from "@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap";
 
 defineProps(["users"])
 </script>
@@ -358,7 +363,7 @@ Lastly, pass the correct `name` property to each table in the Vue template. Opti
 
 ```vue
 <script setup>
-import { Table } from "@protonemedia/inertiajs-tables-laravel-query-builder";
+import { Table } from "@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap";
 
 defineProps(["companies", "users"])
 </script>
@@ -383,7 +388,7 @@ defineProps(["companies", "users"])
 You can override the default pagination translations with the `setTranslations` method. You can do this in your main JavaScript file:
 
 ```js
-import { setTranslations } from "@protonemedia/inertiajs-tables-laravel-query-builder";
+import { setTranslations } from "@grandadevans/inertiajs-tables-laravel-query-builder--bootstrap";
 
 setTranslations({
   next: "Next",
@@ -461,13 +466,15 @@ php artisan dusk
 
 * The `InteractsWithQueryBuilder` mixin has been removed and is no longer needed.
 * The `Table` component no longer needs the `filters`, `search`, `columns`, and `on-update` properties.
-* When using a custom `thead` or `tbody` slot, you need to provide [the styling](https://github.com/protonemedia/inertiajs-tables-laravel-query-builder/blob/c8e21649ad372d309eeb62a8f771aa4c7cd0089e/js/Tailwind2/Table.vue#L1) manually.
+* When using a custom `thead` or `tbody` slot, you need to provide [the styling](https://github.com/grandadevans/inertiajs-tables-laravel-query-builder--bootstrap/blob/c8e21649ad372d309eeb62a8f771aa4c7cd0089e/js/Tailwind2/Table.vue#L1) manually.
 * When using a custom `thead`, the `showColumn` method has been renamed to `show`.
 * The `setTranslations` method is no longer part of the `Pagination` component, but should be imported.
 * The templates and logic of the components are not separated anymore. Use slots to inject your own implementations.
 
-## v2.1 Roadmap
+## v2.3 Roadmap
 
+* Switching to Vite
+* Switching styles to Bootstrap
 * Boolean filters
 * Date filters
 * Date range filters
@@ -481,27 +488,40 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## Other Laravel packages
+[//]: # ()
+[//]: # (## Other Laravel packages)
 
-* [`Laravel Analytics Event Tracking`](https://github.com/protonemedia/laravel-analytics-event-tracking): Laravel package to easily send events to Google Analytics.
-* [`Laravel Blade On Demand`](https://github.com/protonemedia/laravel-blade-on-demand): Laravel package to compile Blade templates in memory.
-* [`Laravel Cross Eloquent Search`](https://github.com/protonemedia/laravel-cross-eloquent-search): Laravel package to search through multiple Eloquent models.
-* [`Laravel Eloquent Scope as Select`](https://github.com/protonemedia/laravel-eloquent-scope-as-select): Stop duplicating your Eloquent query scopes and constraints in PHP. This package lets you re-use your query scopes and constraints by adding them as a subquery.
-* [`Laravel Eloquent Where Not`](https://github.com/protonemedia/laravel-eloquent-where-not): This Laravel package allows you to flip/invert an Eloquent scope, or really any query constraint.
-* [`Laravel FFMpeg`](https://github.com/protonemedia/laravel-ffmpeg): This package provides an integration with FFmpeg for Laravel. The storage of the files is handled by Laravel's Filesystem.
-* [`Laravel Form Components`](https://github.com/protonemedia/laravel-form-components): Blade components to rapidly build forms with Tailwind CSS Custom Forms and Bootstrap 4. Supports validation, model binding, default values, translations, includes default vendor styling and fully customizable!
-* [`Laravel Mixins`](https://github.com/protonemedia/laravel-mixins): A collection of Laravel goodies.
-* [`Laravel Verify New Email`](https://github.com/protonemedia/laravel-verify-new-email): This package adds support for verifying new email addresses: when a user updates its email address, it won't replace the old one until the new one is verified.
-* [`Laravel Paddle`](https://github.com/protonemedia/laravel-paddle): Paddle.com API integration for Laravel with support for webhooks/events.
-* [`Laravel WebDAV`](https://github.com/protonemedia/laravel-webdav): WebDAV driver for Laravel's Filesystem.
+[//]: # ()
+[//]: # (* [`Laravel Analytics Event Tracking`]&#40;https://github.com/protonemedia/laravel-analytics-event-tracking&#41;: Laravel package to easily send events to Google Analytics.)
+
+[//]: # (* [`Laravel Blade On Demand`]&#40;https://github.com/protonemedia/laravel-blade-on-demand&#41;: Laravel package to compile Blade templates in memory.)
+
+[//]: # (* [`Laravel Cross Eloquent Search`]&#40;https://github.com/protonemedia/laravel-cross-eloquent-search&#41;: Laravel package to search through multiple Eloquent models.)
+
+[//]: # (* [`Laravel Eloquent Scope as Select`]&#40;https://github.com/protonemedia/laravel-eloquent-scope-as-select&#41;: Stop duplicating your Eloquent query scopes and constraints in PHP. This package lets you re-use your query scopes and constraints by adding them as a subquery.)
+
+[//]: # (* [`Laravel Eloquent Where Not`]&#40;https://github.com/protonemedia/laravel-eloquent-where-not&#41;: This Laravel package allows you to flip/invert an Eloquent scope, or really any query constraint.)
+
+[//]: # (* [`Laravel FFMpeg`]&#40;https://github.com/protonemedia/laravel-ffmpeg&#41;: This package provides an integration with FFmpeg for Laravel. The storage of the files is handled by Laravel's Filesystem.)
+
+[//]: # (* [`Laravel Form Components`]&#40;https://github.com/protonemedia/laravel-form-components&#41;: Blade components to rapidly build forms with Tailwind CSS Custom Forms and Bootstrap 4. Supports validation, model binding, default values, translations, includes default vendor styling and fully customizable!)
+
+[//]: # (* [`Laravel Mixins`]&#40;https://github.com/protonemedia/laravel-mixins&#41;: A collection of Laravel goodies.)
+
+[//]: # (* [`Laravel Verify New Email`]&#40;https://github.com/protonemedia/laravel-verify-new-email&#41;: This package adds support for verifying new email addresses: when a user updates its email address, it won't replace the old one until the new one is verified.)
+
+[//]: # (* [`Laravel Paddle`]&#40;https://github.com/protonemedia/laravel-paddle&#41;: Paddle.com API integration for Laravel with support for webhooks/events.)
+
+[//]: # (* [`Laravel WebDAV`]&#40;https://github.com/protonemedia/laravel-webdav&#41;: WebDAV driver for Laravel's Filesystem.)
 
 ## Security
 
-If you discover any security related issues, please email pascal@protone.media instead of using the issue tracker.
+If you discover any security related issues, please email john@grandadevans.com instead of using the issue tracker.
 
 ## Credits
 
-- [Pascal Baljet](https://github.com/protonemedia)
+- [John Evans (GrandadEvans)](https://github.com/grandadevans)
+- [Pascal Baljet - Original repo](https://github.com/protonemedia)
 - [All Contributors](../../contributors)
 
 ## License

@@ -177,13 +177,13 @@ class TwoTablesTest extends DuskTestCase
                 ->get();
 
             $companies->last()->update([
-                'name'    => 'Protone Media B.V.',
-                'address' => 'The Netherlands',
+                'name'    => 'GrandadEvans.com',
+                'address' => 'United Kingdom',
             ]);
 
             $users->last()->update([
-                'name'  => 'Baljet Pascal',
-                'email' => 'pascal@pascal.pascal',
+                'name'  => 'John Evans',
+                'email' => 'john@grandadevans.com',
             ]);
 
             $browser->visit('/two-tables/spatie')
