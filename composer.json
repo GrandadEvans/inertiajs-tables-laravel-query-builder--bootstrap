@@ -4,6 +4,7 @@
     "homepage": "https://github.com/grandadevans/inertiajs-tables-laravel-query-builder--bootstrap",
     "type": "library",
     "license": "MIT",
+    "version": "3.0.0",
     "authors": [
         {
             "name": "John Evans",
@@ -12,13 +13,13 @@
     ],
     "require": {
         "php": "^8.1|^8.2",
-        "illuminate/support": "^9.37|^10.0"
+        "illuminate/support": "^9.37|^10.32"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.8",
-        "inertiajs/inertia-laravel": "^0.6.9",
-        "orchestra/testbench": "^7.0|^8.0",
-        "phpunit/phpunit": "^9.5"
+        "friendsofphp/php-cs-fixer": "^v3.38.2",
+        "inertiajs/inertia-laravel": "^0.6.11",
+        "orchestra/testbench": "^7.0|^v8.15.0",
+        "phpunit/phpunit": "^10.4.2"
     },
     "autoload": {
         "psr-4": {
