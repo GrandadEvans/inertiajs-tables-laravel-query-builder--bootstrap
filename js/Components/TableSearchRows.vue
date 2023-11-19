@@ -39,7 +39,7 @@
       >
         <button
           class="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          :dusk="`remove-search-row-${searchInput.key}`"
+          :data-test-js="`remove-search-row-${searchInput.key}`"
           @click.prevent="onRemove(searchInput.key)"
         >
           <span class="sr-only">Remove search</span>

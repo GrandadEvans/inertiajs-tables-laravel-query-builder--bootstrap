@@ -5,7 +5,7 @@
     <component
       :is="cell.sortable ? 'button' : 'div'"
       class="py-3 px-6 w-full"
-      :dusk="cell.sortable ? `sort-${cell.key}` : null"
+      :data-test-js="cell.sortable ? `sort-${cell.key}` : null"
       @click.prevent="onClick"
     >
       <span class="flex flex-row items-center">

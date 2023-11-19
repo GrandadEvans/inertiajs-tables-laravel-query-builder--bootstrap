@@ -1,7 +1,7 @@
 <template>
   <ButtonWithDropdown
     placement="bottom-end"
-    dusk="filters-dropdown"
+    data-test-js="filters-dropdown"
     :active="hasEnabledFilters"
   >
     <template #button>

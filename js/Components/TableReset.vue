@@ -2,7 +2,7 @@
   <button
     ref="button"
     type="button"
-    dusk="reset-table"
+    data-test-js="reset-table"
     class="w-full bg-white border rounded-md shadow-sm px-4 py-2 inline-flex justify-center text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 border-gray-300"
     aria-haspopup="true"
     @click.prevent="onClick"

@@ -1,7 +1,7 @@
 <template>
   <ButtonWithDropdown
     placement="bottom-end"
-    dusk="columns-dropdown"
+    data-test-js="columns-dropdown"
     :active="hasHiddenColumns"
   >
     <template #button>
@@ -54,7 +54,7 @@
               :aria-pressed="!column.hidden"
               :aria-labelledby="`toggle-column-${column.key}`"
               :aria-describedby="`toggle-column-${column.key}`"
-              :dusk="`toggle-column-${column.key}`"
+              :data-test-js="`toggle-column-${column.key}`"
               @click.prevent="onChange(column.key, column.hidden)"
             >
               <span class="sr-only">Column status</span>

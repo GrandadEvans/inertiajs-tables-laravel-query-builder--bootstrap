@@ -20,7 +20,7 @@
           'text-gray-700 hover:text-gray-500': previousPageUrl
         }"
         :href="previousPageUrl"
-        :dusk="previousPageUrl ? 'pagination-simple-previous' : null"
+        :data-test-js="previousPageUrl ? 'pagination-simple-previous' : null"
         class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md bg-white"
         @click.prevent="onClick(previousPageUrl)"
       >
@@ -41,7 +41,7 @@
         <span class="hidden sm:inline ml-2">{{ translations.previous }}</span>
       </component>
       <PerPageSelector
-        dusk="per-page-mobile"
+        data-test-js="per-page-mobile"
         :value="perPage"
         :options="perPageOptions"
         :on-change="onPerPageChange"
@@ -53,7 +53,7 @@
           'text-gray-700 hover:text-gray-500': nextPageUrl
         }"
         :href="nextPageUrl"
-        :dusk="nextPageUrl ? 'pagination-simple-next' : null"
+        :data-test-js="nextPageUrl ? 'pagination-simple-next' : null"
         class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md bg-white"
         @click.prevent="onClick(nextPageUrl)"
       >
@@ -82,7 +82,7 @@
     >
       <div class="flex flex-row space-x-4 items-center flex-grow">
         <PerPageSelector
-          dusk="per-page-full"
+          data-test-js="per-page-full"
           :value="perPage"
           :options="perPageOptions"
           :on-change="onPerPageChange"
@@ -109,7 +109,7 @@
               'text-gray-500 hover:bg-gray-50': previousPageUrl
             }"
             :href="previousPageUrl"
-            :dusk="previousPageUrl ? 'pagination-previous' : null"
+            :data-test-js="previousPageUrl ? 'pagination-previous' : null"
             class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium"
             @click.prevent="onClick(previousPageUrl)"
           >
@@ -139,7 +139,7 @@
                   !isNaN(link.label) || link.label === '...'
                 "
                 :href="link.url"
-                :dusk="link.url ? `pagination-${link.label}` : null"
+                :data-test-js="link.url ? `pagination-${link.label}` : null"
                 class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700"
                 :class="{
                   'cursor-not-allowed': !link.url,
@@ -160,7 +160,7 @@
               'text-gray-500 hover:bg-gray-50': nextPageUrl
             }"
             :href="nextPageUrl"
-            :dusk="nextPageUrl ? 'pagination-next' : null"
+            :data-test-js="nextPageUrl ? 'pagination-next' : null"
             class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium"
             @click.prevent="onClick(nextPageUrl)"
           >
