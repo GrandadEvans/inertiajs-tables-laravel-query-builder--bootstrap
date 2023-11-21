@@ -1,28 +1,21 @@
 <template>
-  <th
-    v-show="!cell.hidden"
-  >
+  <th v-show="!cell.hidden">
     <component
       :is="cell.sortable ? 'button' : 'div'"
-      class="py-3 px-6 w-full"
       :data-test-js="cell.sortable ? `sort-${cell.key}` : null"
       @click.prevent="onClick"
     >
-      <span class="flex flex-row items-center">
-        <slot name="label"><span class="uppercase">{{ cell.label }}</span></slot>
+      <span>
+        <slot name="label"><span>{{ cell.label }}</span></slot>
 
         <slot name="sort">
           <svg
             v-if="cell.sortable"
             aria-hidden="true"
-            class="w-3 h-3 ml-2"
-            :class="{
-              'text-gray-400': !cell.sorted,
-              'text-green-500': cell.sorted,
-            }"
+            class="inertia-table-direction-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
-            :sorted="cell.sorted"
+            :data-sorted="cell.sorted"
           >
             <path
               v-if="!cell.sorted"

@@ -1,16 +1,5 @@
 <template>
-  <div v-if="table_type === 'simple'">
-    <InertiaSimpleTable></InertiaSimpleTable>
-  </div>
-  <div class="flex flex-col">
-    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-      <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-        <div class="shadow border-b border-gray-200 relative">
-          <slot />
-        </div>
-      </div>
-    </div>
-  </div>
+    <slot />
 </template>
 
 <script setup lang="ts">
@@ -21,3 +10,10 @@ const props = defineProps({
   },
 });
 </script>
+
+<style lang="scss">
+:root {
+    --inertia-table-background-color: var(--color-background);
+    --inertia-table-color: var(--bs-body-color);
+}
+</style>
